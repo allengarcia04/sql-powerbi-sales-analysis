@@ -1,4 +1,4 @@
-# 📦 ASCeS Sound Product Sales Analysis (SQL + Power BI  Project)
+# 📦 ASCeS Sound Product Sales Analysis (SQL + Power BI Project)
 
 ## 📌 Overview
 
@@ -8,12 +8,11 @@ This project showcases an end-to-end data analysis solution for ASCeS Sound’s 
 
 ## 🎯 Objectives
 
-- Analyze sales data to identify product performance trends  
-- Evaluate discount effectiveness across time periods and product categories  
-- Deliver clear, visual insights through interactive dashboards using Power BI  
-- Integrate SQL queries and Power BI for seamless end-to-end data analysis  
+- Analyze sales data to identify product performance trends
+- Evaluate discount effectiveness across time periods and product categories
+- Deliver clear, visual insights through interactive dashboards using Power BI
+- Integrate SQL queries and Power BI for seamless end-to-end data analysis
 - Provide actionable recommendations to ASCeS based on insights derived from the data
-
 
 ---
 
@@ -37,17 +36,17 @@ This project showcases an end-to-end data analysis solution for ASCeS Sound’s 
 
 The following raw datasets were used to build the database and perform analysis. All files are located in the [`/data`](./data) folder:
 
-| File | Description |
-|------|-------------|
+| File                                            | Description                                                            |
+| ----------------------------------------------- | ---------------------------------------------------------------------- |
 | [`product_sales.csv`](./data/product_sales.csv) | Transactional sales records, including revenue and product identifiers |
-| [`Product_data.csv`](./data/Product_data.csv) | Product metadata including names, categories, and price points |
-| [`discount_data.csv`](./data/discount_data.csv) | Monthly discount bands and corresponding discount rates |
+| [`Product_data.csv`](./data/Product_data.csv)   | Product metadata including names, categories, and price points         |
+| [`discount_data.csv`](./data/discount_data.csv) | Monthly discount bands and corresponding discount rates                |
 
 ---
 
 ## 🧠 Sample SQL Query Used
 
-<img src="./import_sql_and_query.jpg" alt="SQL Import Screenshot" width="700"/>
+<img src="./product_join_query.jpg" alt="SQL Import Screenshot" width="700"/>
 
 > This query calculates `discount_revenue` by joining product and discount data using band and month values.
 
@@ -55,19 +54,19 @@ The following raw datasets were used to build the database and perform analysis.
 
 ## 📊 Power BI Dashboard
 
-> 📌 *Dashboard includes KPIs like revenue by product, profit (monthly and yearly), sales trends, top-performing bands, and discount performance insights.*
+> 📌 _Dashboard includes KPIs like revenue by product, profit (monthly and yearly), sales trends, top-performing bands, and discount performance insights._
 
 <img src="./Sales Analytics Dashboard.jpg" alt="Power BI Sales Dashboard" width="800"/>
 
-- 🔗 [**View Live Dashboard**](https://app.powerbi.com/groups/me/reports/544de236-a759-4944-aaa6-6b83d74a83f7/83945a808025c532c7ed?experience=power-bi)  
+- 🔗 [**View Live Dashboard**](https://app.powerbi.com/groups/me/reports/544de236-a759-4944-aaa6-6b83d74a83f7/83945a808025c532c7ed?experience=power-bi)
 - 🔽 [**Download Power BI Report (.pbix)**](./Asces%20Sales%20Dashboard.pbix)
-
 
 ---
 
 ## ⚠️ Challenges & Resolutions
 
-###  Challenge 1: Data Aggregation from Multiple Sources  
+### Challenge 1: Data Aggregation from Multiple Sources
+
 The sales, product, and discount data were stored separately and needed to be linked to extract meaningful insights.
 
 **Resolution:**  
@@ -75,7 +74,8 @@ Used SQL joins to combine tables based on `Discount_Band` and `Month` to calcula
 
 ---
 
-###  Challenge 2: Data Cleaning & Formatting  
+### Challenge 2: Data Cleaning & Formatting
+
 Some data inconsistencies and formatting issues affected visualization accuracy in Power BI.
 
 **Resolution:**  
@@ -83,7 +83,8 @@ Cleaned and transformed data using **Power Query Editor**, ensured consistent da
 
 ---
 
-###  Challenge 3: Year-on-Year Profit Calculations  
+### Challenge 3: Year-on-Year Profit Calculations
+
 Comparing profits across years required additional logic and transformation.
 
 **Resolution:**  
@@ -114,13 +115,12 @@ Based on the insights generated from the Power BI dashboard:
 
 ## 🛠️ Tools & Technologies Used
 
-| Tool       | Purpose |
-|------------|---------|
-| **Excel**          | Raw data storage and schema development |
-| **SQL** | Database creation, storage, and querying |
-| **Power BI Desktop**   | Data visualization and interactive dashboard |
-| **Power Query**        | Data cleaning and transformation |
-
+| Tool                 | Purpose                                      |
+| -------------------- | -------------------------------------------- |
+| **Excel**            | Raw data storage and schema development      |
+| **SQL**              | Database creation, storage, and querying     |
+| **Power BI Desktop** | Data visualization and interactive dashboard |
+| **Power Query**      | Data cleaning and transformation             |
 
 ---
 
@@ -130,5 +130,3 @@ Based on the insights generated from the Power BI dashboard:
 - Delivered actionable insights from raw CSV data
 - Applied ETL processes, DAX measures, and interactive dashboard design
 - Strengthened data storytelling and decision support capabilities
-
-
